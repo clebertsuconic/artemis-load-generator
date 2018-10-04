@@ -1,0 +1,4 @@
+#java -jar target/destination-bench.jar --bytes 100 --protocol amqp --url amqp://localhost:61616 --name q1 --iterations 500000 --forks 1 --destinations 1 --runs 10 --warmup 100000 --wait 2 --out $1
+#java -jar target/destination-bench.jar --target 15000 --bytes 100 --protocol amqp --url amqp://localhost:61616 --name q1 --iterations 100000 --forks 8 --destinations 8 --runs 5 --warmup 100000 --wait 2 --out $1 --format DETAIL
+#java -jar target/destination-bench.jar --target 20000 --bytes 100 --protocol amqp --url amqp://localhost:61616 --name q1 --iterations 100000 --forks 8 --destinations 8 --runs 5 --warmup 100000 --wait 2 --out $1 --format DETAIL
+java -jar target/destination-bench.jar --bytes 100 --protocol amqp --url amqp://localhost:61616 --name q1 --iterations 100000 --forks 8 --destinations 8 --runs 5 --warmup 100000 --wait 2 --out $1 --format DETAIL
